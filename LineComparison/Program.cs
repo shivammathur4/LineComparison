@@ -6,7 +6,6 @@ namespace LineComparison
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine("===========================================");
             Console.WriteLine("Welcome to the Line Comparision Computation");
             Console.WriteLine("===========================================");
@@ -24,12 +23,13 @@ namespace LineComparison
             Console.WriteLine("Length of first line is " + line2Length);
             if (line1Length == line2Length)
                 Console.WriteLine("Both lines have equal length");
+            else if (line1Length > line2Length)
+                Console.WriteLine("First line is longer than the second one");
             else
-                Console.WriteLine("Both lines have unequal length");
+                Console.WriteLine("First line is sorter than the second one");
             return;
         }
-
-          static void StorePoints(ref int[] p1, ref int[] p2)
+        static void StorePoints(ref int[] p1, ref int[] p2)
         {
             Console.WriteLine("Enter X-Coordinate of 1st point");
             p1[0] = Int32.Parse(Console.ReadLine());
