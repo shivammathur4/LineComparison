@@ -6,6 +6,7 @@ namespace LineComparison
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine("===========================================");
             Console.WriteLine("Welcome to the Line Comparision Computation");
             Console.WriteLine("===========================================");
@@ -27,7 +28,8 @@ namespace LineComparison
                 Console.WriteLine("Both lines have unequal length");
             return;
         }
-        static void StorePoints(ref int[] p1, ref int[] p2)
+
+          static void StorePoints(ref int[] p1, ref int[] p2)
         {
             Console.WriteLine("Enter X-Coordinate of 1st point");
             p1[0] = Int32.Parse(Console.ReadLine());
